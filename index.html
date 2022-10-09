@@ -70,7 +70,6 @@ meats.set('Chicken', [25, 25]);
 meats.set('Pork', [35, 35]);
 meats.set('Beef', [25, 25]);
 meats.set('Lamb', [25, 25]);
-meats.set('Turkey', [10, 70]);
 
 // Declare "veg" and "extras" ingredient maps. The keys to the top-level map are ingredient names. Each value
 // is itself a map where the key is a number of "minutes before serving time" and the value
@@ -83,10 +82,6 @@ veg.set('Roast Potatoes', new Map([
   [70,'Once the potatoes have simmered for 10 minutes, drain them. Add the potatoes to the roasting dish with hot oil in, and turn them to ensure they have a thin coating of oil on all sides. Return the dish to the oven.'],
   [30,'Turn the potatoes.']
 ]));
-veg.set('Roast Parsnips', new Map([
-  [65,'Peel the parsnips and chop into batons.'],
-  [60,'Place some oil in the roasting dish, add the parsnips and turn them to ensure they have a thin coating of oil on all sides. Put the dish in the oven.']
-]));
 veg.set('Roast Carrots', new Map([
   [65,'Peel the carrots and chop into batons.'],
   [60,'Place some oil in the roasting dish, add the carrots and turn them to ensure they have a thin coating of oil on all sides. Put the dish in the oven.']
@@ -94,19 +89,8 @@ veg.set('Roast Carrots', new Map([
 veg.set('Boiled Carrots', new Map([
   [25,'Peel and chop the carrots. Place in a saucepan of cold water and bring to the boil, or in a steamer over boiling water.']
 ]));
-veg.set('Swede (mashed)', new Map([
-  [40,'Peel and chop the swede. Place in a saucepan of cold water and bring to the boil.'],
-  [5,'Drain the swede, return to the saucepan (off the heat), add some butter and mash it.']
-]));
-veg.set('Sprouts', new Map([
-  [15,'Wash the sprouts and cut a small cross in the base of each sprout with a knife.'],
-  [10,'Place the sprouts into a saucepan of boiling water, or a steamer.']
-]));
 veg.set('Runner Beans', new Map([
   [10,'Wash the runner beans and place them in a saucepan of boiling water, or in a steamer.']
-]));
-veg.set('Broad Beans', new Map([
-  [15,'Wash the broad beans and place them in a saucepan of boiling water, or in a steamer.']
 ]));
 veg.set('Broccoli', new Map([
   [15,'Wash the broccoli and cut the florets from the stem. Further divide the florets if necessary until you have roughly one-inch pieces. Place into a steamer above boiling water.']
@@ -115,13 +99,6 @@ veg.set('Peas', new Map([
   [10,'Place frozen peas into a saucepan of boiling water, or a steamer.']
 ]));
 var extras = new Map();
-extras.set('Pigs in Blankets (mini)', new Map([
-  [30,'Place the pigs in blankets into an oven dish, and place in the oven.']
-]));
-extras.set('Pigs in Blankets (full size)', new Map([
-  [50,'Wrap each sausage with a rasher of bacon.'],
-  [45,'Place the pigs in blankets into an oven dish, and place in the oven.']
-]));
 extras.set('Yorkshire Puddings (frozen)', new Map([
   [5,'Place frozen Yorksire puddings on a baking tray in the oven.']
 ]));
@@ -130,11 +107,6 @@ extras.set('Yorkshire Puddings (batter mix)', new Map([
   [40, 'Place Yorkshire puddings tin with a little oil in each, and put in oven to warm'],
   [25, 'Divide Yorkshire pudding batter equally into tin compartments and put it back into the oven'],
   [5, 'Remove Yorkshire puddings from oven, or when they are risen and golden']
-]));
-extras.set('Stuffing balls (home-made)', new Map([
-  [60,'Finely chop quarter of an onion and fry gently until soft. Leave to cool.'],
-  [45,'Combine sausagemeat, the fried onion and sage, and roll into stuffing balls.'],
-  [40,'Place stuffing on a tray or oven dish and place it in the oven.']
 ]));
 extras.set('Stuffing balls (from packet)', new Map([
   [35,'Boil water and make the stuffing according to packet instructions.'],
